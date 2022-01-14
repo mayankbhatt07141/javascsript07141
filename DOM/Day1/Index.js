@@ -17,3 +17,5 @@ greet = () => {
   document.getElementById("greetContainer").innerText =
     "hy " + name1 + " " + greetings();
 };
+let btn = document.querySelectorAll("button");
+console.log(btn);
