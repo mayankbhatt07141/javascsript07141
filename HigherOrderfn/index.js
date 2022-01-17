@@ -29,3 +29,36 @@ function x() {
 }
 let z = x();
 console.log(z());
+
+//Map
+
+const users = [
+  { firstname: "mayank", lastname: "bhatt", age: 26 },
+  { firstname: "donald", lastname: "bhatt", age: 26 },
+  { firstname: "mayank", lastname: "bhatt", age: 15 },
+  { firstname: "mayank", lastname: "bhatt", age: 56 },
+];
+let fullname = users.map((value) => {
+  return value.firstname + value.lastname;
+});
+console.log(fullname);
+
+const output = users.reduce((acc, curr) => {
+  if (acc[curr.age]) {
+    acc[curr.age] = ++acc[curr.age];
+  } else {
+    acc[curr.age] = 1;
+  }
+  return acc;
+}, {});
+
+console.log(output);
+
+let out = users.reduce((acc, curr) => {
+  if (curr.age === 26) {
+    acc.push(curr.firstname);
+  }
+  return acc;
+}, []);
+
+console.log(out);
