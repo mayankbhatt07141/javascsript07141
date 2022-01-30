@@ -19,3 +19,5 @@ let P3 = new Promise((res, rej) => {
 Promise.allSettled([P1, P2, P3]).then((value) => {
   console.log(value);
 });
+
+//promise is an object
