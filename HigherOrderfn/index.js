@@ -1,5 +1,19 @@
 // Function that takes function as an argement or returns function from it is called higher order function
+//Note: Functions are first class citizen in javascript
+        // it means they can be treated like any other variable.
+        //   1. assigned to variable
+        //   2. passed as an argument
+        //   3. returned from another function
+        //   4. can add property to the function
+                    function f(){
+                       console.log("test")
+                    }
 
+                    f.test = "this was test" //added test property in the function
+      
+                    console.log(f.test) //this was test
+
+    
 
 let radius = [2, 5, 4, 7];
 
